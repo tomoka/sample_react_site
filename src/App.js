@@ -1,25 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./page/Home";
+import Register from "./page/Register";
+import Login from "./page/Login";
 
-function App() {
-  const subject = "React";
-
+const App = () => {
   return (
-    <main className="App">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello, {subject}！
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path={`/`} element={<Home />} />
+        <Route path={`/register/`} element={<Register />} />
+        <Route path={`/login/`} element={<Login />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

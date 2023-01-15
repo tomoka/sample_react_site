@@ -1,19 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './css/common.css';
-import './css/common.css.map';
-import App from './App';
-import Header from './layout/Header';
-import Footer from './layout/Footer';
-import reportWebVitals from './reportWebVitals';
+import '../css/common.css';
+import '../css/common.css.map';
+import App from '../App';
+import Header from '../layout/Header';
+import Footer from '../layout/Footer';
+import reportWebVitals from '../reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
     <Header />
-    <h1>Index</h1>
-    <App subject="Clarice" />
+      <h1>Contact</h1>
+      <App subject="Clarice" />
     <Footer />
   </React.StrictMode>
 );
